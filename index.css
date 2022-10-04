@@ -1,0 +1,167 @@
+body {
+  background-color: #fff;
+}
+
+main {
+  width: 500px;
+  margin: auto;
+  text-align: center;
+}
+
+li {
+  list-style: none;
+}
+
+.separator {
+  width: 30%;
+  background-color: black;
+  height: 3px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.book-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 2px solid black;
+}
+
+.book-one {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ddd;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+button {
+  height: 40px;
+  margin-top: 10px;
+  border: 2px solid black;
+  border-bottom: 5px solid black;
+  border-right: 5px solid black;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input {
+  margin-bottom: 10px;
+  width: 60%;
+  height: 30px;
+  border: 2px solid black;
+}
+
+#add-book {
+  position: relative;
+  right: -24%;
+  width: 70px;
+}
+
+#nav-bar {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(197, 197, 219);
+  width: 100%;
+  margin-right: 10px;
+  border: 2px solid black;
+}
+
+header {
+  background-color: white;
+}
+
+.nav-list {
+  display: flex;
+  justify-self: flex-end;
+}
+
+#nav-bar h1 {
+  margin-left: 10px;
+}
+
+.nav-list li {
+  list-style: none;
+  margin-right: 20px;
+  border-right: 2px solid black;
+  padding-right: 10px;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2em;
+}
+
+.nav-list li a:hover {
+  color: rgb(130, 9, 252);
+}
+
+footer {
+  background-color: rgb(197, 197, 219);
+  margin-bottom: 10px;
+  width: 100%;
+  margin-right: 10px;
+  margin-top: 30px;
+  font-family: Calibri, "Trebuchet MS", sans-serif;
+  border: 2px solid black;
+  position: fixed;
+  bottom: 20px;
+}
+
+#contact {
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: justify;
+  align-items: center;
+  font-size: larger;
+  font-family: Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 600;
+}
+
+#contact ul li {
+  list-style-type: disc;
+  margin-right: 20px;
+  padding-right: 10px;
+}
+
+.date {
+  height: 30px;
+  text-align: right;
+  padding-right: 20px;
+  padding-top: 5px;
+  font-size: large;
+}
+
+@media screen and (min-width: 600px) {
+  ::placeholder {
+    font-size: larger;
+  }
+
+  main {
+    width: 98%;
+  }
+
+  input {
+    height: 50px;
+  }
+
+  .remove-btn {
+    margin-right: 20px;
+  }
+
+  .book-one li {
+    padding-left: 20px;
+    font-size: larger;
+  }
+}
